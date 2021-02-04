@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard - художественная галерея</title>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="Logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link">О&nbsp;нас</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#events" class="nav__link">События</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Издания</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Проекты</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+        </ul>
+        <a href="#" class="header__login header__login--mobile btn ">Войти</a>
+      </nav>
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <a href="#" class="header__login">Войти</a>
+      <div class="search">
+        <form method="get" class="search__form">
+          <button type="button" class="search__btn"></button>
+          <input type="search" name="search" id="search" class="search__input" placeholder="Поиск по сайту">
+        </form>
+      </div>
+    </div>
+    <div class="header-menu">
+      <div class="container header-menu__container">
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a class="header-menu__link header-menu__link--drop">Реализм</a>
+            <ul class="header-menu__list--dropdown dropdown-list">
+              <div data-simplebar class="wrapper">
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--tintoretto">Тинторетто</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--friedrich">Фридрих</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--leonardo">Леонардо</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--verrocchio">Верроккьо</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link header-menu__link--drop">Импрессионизм</a>
+            <ul class="header-menu__list--dropdown dropdown-list">
+              <div data-simplebar class="wrapper">
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--mone">Моне</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--sisley">Сислей</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--mane">Мане</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--renoir">Ренуар</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--mone">Моне</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--sisley">Сислей</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--mane">Мане</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--renoir">Ренуар</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link header-menu__link--drop">Постимпрессионизм</a>
+            <ul class="header-menu__list--dropdown dropdown-list">
+              <div data-simplebar class="wrapper">
+                <li class="dropdown-list__item"><a href="" class="dropdown-list__link dropdown-list__link--vangog">Ван
+                    Гог</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--sezann">Сезанн</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--gogen">Гоген</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--seurat">Сёра</a></li>
+                <li class="dropdown-list__item"><a href="" class="dropdown-list__link dropdown-list__link--vangog">Ван
+                    Гог</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--sezann">Сезанн</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--gogen">Гоген</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--seurat">Сёра</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link header-menu__link--drop">Авангард</a>
+            <ul class="header-menu__list--dropdown dropdown-list">
+              <div data-simplebar class="wrapper">
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--kandinsky">Кандинский</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--marinetti">Маринетти</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--malevich">Малевич</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--picasso">Пикассо</a></li>
+              </div>
+            </ul>
+
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link header-menu__link--drop">Футуризм</a>
+            <ul class="header-menu__list--dropdown dropdown-list">
+              <div data-simplebar class="wrapper">
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--karra">Карра</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--pratella">Прателла</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--severini">Северини</a></li>
+                <li class="dropdown-list__item"><a href=""
+                    class="dropdown-list__link dropdown-list__link--balla">Балла</a></li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__background"></div>
+      <div class="container hero__container">
+        <h2 class="hero__title">
+          Прикоснитесь к&nbsp;прекрасному
+        </h2>
+        <p class="hero__text">
+          Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+          для новых предложений.
+        </p>
+        <a href="" class="btn hero__btn">Подписаться на рассылку</a>
+      </div>
+      <h1 class="visually-hidden">Сайт художественной галереи Blanchard</h1>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h3 class="title about__title">
+          О нас
+        </h3>
+        <p class="about__text">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов
+          и&nbsp;ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет
+          за&nbsp;собой процесс
+          внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных
+          исследований
+          создаёт необходимость включения&nbsp;в производственный план целого ряда внеочередных мероприятий
+          с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации
+          современных стандартов, действия
+          представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть
+          разоблачены. </p>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container gallery__container">
+        <div class="gallery__left">
+          <h3 class="title gallery__title">Галерея</h3>
+          <div class="filter">
+            <div class="filter__text">Фильтровать по:</div>
+            <select name="select" id="customSelect">
+              <option value="">Автор</option>
+              <option value="Направление">Направление</option>
+              <option value="Техника">Техника</option>
+            </select>
+          </div>
+          <div class="gallery__note">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+            <a href="#" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+          </div>
+        </div>
+
+        <div class="gallery__right">
+          <div class="swiper-top">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-container">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/gallery/g01.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g02.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g03.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g04.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g05.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g06.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g07.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g08.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g09.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g10.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g11.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g12.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g13.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g14.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g15.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g16.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g17.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g18.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g19.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g20.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g21.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g22.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g23.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g24.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g25.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g26.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g27.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g28.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g29.jpg" alt="" class="swiper-slide__img"></div>
+              <div class="swiper-slide"><img src="img/gallery/g30.jpg" alt="" class="swiper-slide__img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container catalog__container">
+        <div class="catalog__top">
+          <h2 class="title catalog__title catalog-tab">Каталог</h2>
+          <div class="catalog__lang">
+            <button class="catalog__btn catalog__btn--french tabs__btn" data-path="french"></button>
+            <button class="catalog__btn catalog__btn--german tabs__btn" data-path="german"></button>
+            <button class="catalog__btn catalog__btn--italian tabs__btn" data-path="italian"></button>
+            <button class="catalog__btn catalog__btn--russian tabs__btn" data-path="russian"></button>
+            <button class="catalog__btn catalog__btn--belgian tabs__btn" data-path="belgian"></button>
+          </div>
+        </div>
+        <div class="catalog-tab__content catalog-tab__content--active" data-target="italian">
+          <p class="catalog__text">
+            Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+            политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+            частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+            уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+          </p>
+          <div class="artists">
+            <div class="artists__left">
+              <div class="artists__content artists__content--active" data-target="ghirlandaio">
+                <img src="img/catalog/Ghirlandaio.jpg" alt="" class="artists__photo">
+                <h3 class="artists__name">Доменико Гирландайо</h3>
+                <span class="artists__lifetime">2 июня 1448 — 11 января 1494</span>
+                <p class="artists__descr">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </div>
+              <div class="artists__content" data-target="boltraffio">
+                <img src="img/catalog/it_boltraffio.jpg" alt="" class="artists__photo">
+                <h3 class="artists__name">Джованни Антонио Больтраффио</h3>
+                <span class="artists__lifetime">1466 — 1516</span>
+                <p class="artists__descr">
+                  Итальянский художник Высокого Возрождения. Происходил из аристократической семьи. Воспитанный в
+                  традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. Его
+                  первое произведение «Воскресение Христа, святой Леонард и святая Лючия» выполнено в 1491 году
+                  совместно
+                  с Марко д'Оджоно для миланской церкви Сан-Джованни-сул-Муро. Был придворным художником Лодовико Моро и
+                  славился своими психологическими портретами.
+                  Больтраффио умер в возрасте 49 лет и был похоронен на кладбище церкви Св. Паулы в Комито.
+                  Некоторые искусствоведы предполагают, что фигура младенца на картине Леонардо да Винчи «Мадонна Литта»
+                  принадлежит кисти Джованни Антонио Больтраффио. Известны подготовительные рисунки Джованни Антонио
+                  Больтраффио, в точности воспроизводящие эту фигуру.
+                </p>
+              </div>
+              <div class="artists__content" data-target="bonsignori">
+                <img src="img/catalog/it_Bonsignori.jpg" alt="" class="artists__photo">
+                <h3 class="artists__name">Франческо Бонсиньори</h3>
+                <span class="artists__lifetime">ок. 1460 — 2 июля 1519</span>
+                <p class="artists__descr">
+                  Итальянский живописец, писавший картины в стиле Ренессанса. Родился около 1460 года в Вероне в семье
+                  художника Альберто Бонсиньори. Обучался живописи в мастерской Франческо Бенальо. В 1480 году переехал
+                  из Вероны в Венецию, где жил до 1487 года. В ранний период творчества находился под влиянием
+                  венецианской живописной школы. Особенное впечатление на Бонсиньори оказало творчество Антонелло да
+                  Мессины, Джованни Беллини, Чима да Конельяно и Альвизе Виварини.
+
+                  Среди известных творений этого периода самыми ранними произведениями художника являются полотна
+                  «Мадонна со спящим младенцем» 1483 года и «Алтарь Даль Бово», или «Мадонна на троне с предстоящими
+                  святыми и донатором Альтабеллой Авогадро» 1484 года, которые ныне входят в собрание Общественного
+                  музея Вероны.
+                </p>
+              </div>
+            </div>
+
+            <div class="artists__right">
+              <div class="accordion__container" id="accordion">
+                <h3 class="accordion__title">C 1400 по 1499 гг.</h3>
+                <div class="accordion__content">
+                  <ul class="accordion__list">
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Бенедетто ди
+                        Биндо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Бергоньоне,
+                        Амброджо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Биссоло,
+                        Франческо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                        data-path="boltraffio">Больтраффио,
+                        Джованни</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                        data-path="bonsignori">Бонсиньори,
+                        Франческо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Боттичини,
+                        Рафаэлло</button></li>
+                    <li class="artists__item"><button
+                        class="artists__btn artists-tab__btn btn-reset">Брамантино</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Бреа,
+                        Людовико</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Бьяджо д’Антонио
+                        Туччи</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Веккьетта</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Андреа
+                        Верроккьо</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                        data-path="ghirlandaio">Доменико Гирландайо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Беноццо
+                        Гоццоли</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Граначчи,
+                        Франческо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Грегорио ди
+                        Чекко</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Джованни да
+                        Удине</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Джованни ди
+                        Паоло</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Джорджоне</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Парентино,
+                        Бернардо</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Пезеллино</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Пьетро
+                        Перуджино</button>
+                    </li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Перуцци,
+                        Бальдассаре</button></li>
+                    <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Пизанелло</button>
+                    </li>
+                    <li class="artists__item"><button
+                        class="artists__btn artists-tab__btn btn-reset">Пинтуриккьо</button>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="accordion__title">C 1500 по 1599 гг.</h3>
+                <div>Second content panel</div>
+                <h3 class="accordion__title">C 1600 по 1699 гг.</h3>
+                <div>First content panel</div>
+                <h3 class="accordion__title">C 1700 по 1799 гг.</h3>
+                <div>Second content panel</div>
+                <h3 class="accordion__title">C 1800 по 1899 гг.</h3>
+                <div>First content panel</div>
+                <h3 class="accordion__title">C 1900 по 1999 гг.</h3>
+                <div>Second content panel</div>
+                <h3 class="accordion__title">C 2000г.</h3>
+                <div>First content panel</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container catalog-tab__content" data-target="french">
+        <p class="catalog__text">
+          Путешествие во Францию – движение к истокам нестареющих направлений в моде, виноделии, литературе. Для многих
+          французская земля – родина великих художников, революционных открытий и откровений в искусстве живописи. Итак,
+          в путь: по следам мастеров, творивших во Франции!
+        </p>
+        <div class="artists">
+          <div class="artists__left">
+
+            <div class="artists__content artists__content--active" data-target="bartelemi">
+              <img src="img/catalog/fr_bartelemi.jpg" alt="Bartelemi" class="artists__photo">
+              <h3 class="artists__name">Бартелеми д’Эйк</h3>
+              <span class="artists__lifetime">около 1420 — после 1470.</span>
+              <p class="artists__descr">
+                Французский художник нидерландского происхождения, принадлежавший к авиньонской школе живописи. Он был
+                придворным художником короля Рене Доброго и имел высокую репутацию как выдающийся мастер. обучение
+                прошёл в мастерской Яна Ван Эйка, где, вероятно, контактировал с Робером Кампеном. Эта версия не имеет
+                документального подтверждения, однако очень популярна среди учёных, поскольку в произведениях Бартелеми
+                видна нидерландская выучка.
+              </p>
+            </div>
+            <div class="artists__content" data-target="hesdin">
+              <img src="img/catalog/no_photo.jpg" alt="" class="artists__photo">
+              <h3 class="artists__name">Жакмар де Эсден</h3>
+              <span class="artists__lifetime">ок. 1355 — ок. 1414</span>
+              <p class="artists__descr">
+                Французский художник-миниатюрист, работавший в стиле интернациональной готики.
+                Жакмар родился в Артуа. Эсден, от названия которого художник получил своё прозвище, — крепость на землях
+                современного департамента Па-де-Кале (в то время это была часть Фландрии и владение герцогов Бургундии).
+                Возможно, что Жакмар родился там. Он был одним из многочисленных нидерландских художников, которые с
+                середины XIV века работали по заказам французского королевского дома. Единственный известный заказчик
+                Жакмара — Жан Беррийский (1340—1416), младший брат французского короля Карла V[1], тративший огромные
+                суммы на свою коллекцию произведений искусства.
+                Жакмар де Эден. Несение креста. Миниатюра из Большого часослова. 1409. Лувр. Париж
+                Большей частью Жакмар жил и работал в Бурже, где находилась основная резиденция Жана Беррийского. Он
+                работал по заказам герцога с 1384 по 1414 гг. С 1384 года Жакмар де Эден получал регулярное содержание
+                из казны герцога. Известно, что миниатюры Жакмара де Эдена украшают Малый часослов (Petites Heures,
+                Национальная библиотека, Париж)[2], Брюссельский или Прекрасный часослов (Tres Bellers Heures,
+                Королевская библиотека в Брюсселе), Большой часослов (Grandes Heures, Национальная библиотека, Париж).
+                Из них Большой часослов считается главной работой художника.
+              </p>
+            </div>
+            <div class="artists__content" data-target="quarton">
+              <img src="img/catalog/fr_quarton.jpg" alt="" class="artists__photo">
+              <h3 class="artists__name">Ангерран Картон</h3>
+              <span class="artists__lifetime"> ок. 1415 — ок. 1466</span>
+              <p class="artists__descr">
+                Ангерран Картон родился около 1415 года на севере Франции, в городе Лане; образование получил в 1425-30
+                годах. Исторические источники сохранили несколько имён Картона. Его пикардийским именем было Шарретон
+                или Шарретье (Charretier), однако когда он переехал в Прованс, имя было латинизировано, и звучало как
+                Картон (Carton или Quarton). Судя по многочисленным готическим элементам его художественного почерка, он
+                сформировался под влиянием стиля, господствовавшего на севере Франции. Величественностью своих
+                композиций, а также некоторыми своими образами он обязан скульптуре готических храмов. В годы
+                формирования Картона в Пикардии было сильным бургундское художественное влияние, в формировании
+                художника сыграли роль произведения Яна ван Эйка, Робера Кампена и Рогира Ван дер Вейдена, которые он,
+                вне сомнения, там видел. Благодаря натурализму этих мастеров, усвоенному художником, он стал достаточно
+                «прогрессивным» для живописи середины XV века. В его произведениях видно внимание к формам предметов,
+                характерным чертам человеческих лиц, пейзажу.
+              </p>
+            </div>
+          </div>
+          <div class="artists__right">
+            <div class="accordion__container" id="accordion2">
+              <h3 class="accordion__title">C 1400 по 1499 гг.</h3>
+              <div class="accordion__content">
+                <ul class="accordion__list">
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="bartelemi">Бартелеми д’Эйк</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="hesdin">Жакмар де Эсден</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="quarton">Картон, Ангерран</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Лиферинкс,
+                      Йос</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мармион,
+                      Симон</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер святого
+                      Эгидия</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер часослова
+                      Бусико</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Жан
+                      Перреаль</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Робине
+                      Тестар</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Никола
+                      Фроман</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Жан Фуке</button>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="accordion__title">C 1500 по 1599 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1600 по 1699 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1700 по 1799 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1800 по 1899 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1900 по 1999 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 2000г.</h3>
+              <div>First content panel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container catalog-tab__content" data-target="german">
+        <p class="catalog__text">
+          Изобразительное искусство Германии берет свое начало еще далекие времена, с того момента как племена германцев
+          пришли на территорию Римской империи. Богатейшее художественное наследие хранится в многочисленных музеях
+          страны, галереях и выставочных центрах. Его также можно увидеть в интерьерах и на фасадах старинных и
+          современных зданий. Изобразительное искусство Германии включает в себя древние фрески, искусно нарисованные
+          портреты, орнаменты, витражи и великолепные картины всех стилей, созданные знаменитыми и никому не известными
+          художниками.
+        </p>
+        <div class="artists">
+          <div class="artists__left">
+
+            <div class="artists__content artists__content--active" data-target="burgkmair">
+              <img src="img/catalog/ger_burgkmair.jpg" alt="Bartelemi" class="artists__photo">
+              <h3 class="artists__name">Ханс Бургкмайр </h3>
+              <span class="artists__lifetime">1473 — 1531</span>
+              <p class="artists__descr">
+                Немецкий художник, гравер и скульптор. Родился в 1473 году в городе Аугсбурге; происходил из семьи
+                художников. Первоначальное
+                обучение он прошёл у своего отца, художника Томана Бургкмайра (1444—1523).
+                С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе у Мартина Шонгауэра. Не исключено,
+                что в годы странствий он доехал из Аугсбурга до Кёльна.
+                Около 1507 года художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе
+                Карпаччо.
+
+                Наряду с живописью Бургкмайр занимался ксилографией.
+
+                Ханс Бургкмайр привлекался неоднократно к работам самим императором Максимилианом I (иллюстрование
+                романа Theuerdank) и пользовался большой славой как у себя в Аугсбурге, так и за его пределами
+              </p>
+            </div>
+            <div class="artists__content" data-target="witz">
+              <img src="img/catalog/ger_witz.jpg" alt="" class="artists__photo">
+              <h3 class="artists__name">Конрад Виц</h3>
+              <span class="artists__lifetime">ок. 1400 — 1445/1446</span>
+              <p class="artists__descr">
+                Немецкий и швейцарский художник.
+                О его жизни до 1431 года, когда художник переехал в Базель, ничего не известно[4]. В 1434 году он вошёл
+                в гильдию художников Базеля, а в следующем году стал гражданином этого города. Возможно, Виц либо учился
+                у нидерландских мастеров, либо совершил путешествие в Нидерланды, так как в его произведениях
+                прослеживается влияние художников этой страны. Весьма вероятны также контакты с бургундской скульптурной
+                школой, в том числе знакомство с творчеством Клауса Слютера. В 1444 году, по приглашению членов
+                Базельского Собора, кардинала Франсуа де Миса, епископа Женевского, Конрад Виц приехал в Женеву, где
+                исполнил картину для главного алтаря в соборе Святого Петра.
+
+                Умер Конрад Витц в 1446 году (вероятно от чумы).
+              </p>
+            </div>
+            <div class="artists__content" data-target="wolgemut">
+              <img src="img/catalog/ger_wolgemut.jpg" alt="" class="artists__photo">
+              <h3 class="artists__name">Михаэль Вольгемут</h3>
+              <span class="artists__lifetime">1434 — 30 ноября 1519</span>
+              <p class="artists__descr">
+                Немецкий живописец, гравёр и резчик по дереву. Представитель нюрнбергской школы живописи. В его
+                мастерской в 1486-89 годах учился Альбрехт Дюрер. Вольгемут выполнял заказ саксонского курфюрста
+                Фридриха Мудрого по оформлению его дворца в Виттенберге (утрачен во Вторую мировую войну).
+                Вероятно, Михаэль Вольгемут обучался ремеслу на работах фламандских живописцев. Вольгемут женился на
+                вдове своего работодателя Ганса Плейденвурфа и получил его мастерскую. Вместе со своим приёмным сыном
+                Вильгельмом Плейденвурфом иллюстрировал «Нюрнбергскую хронику».
+                К лучшим работам Вольгемута относятся: алтарь Перингсдёрфферов (ныне в Церкви мира в Нюрнберге), резной,
+                украшенный живописью алтарь церкви св. Марии в Цвиккау, роспись зала ратуши в Госларе, алтарь в
+                Городской церкви Иоанна Крестителя в Швабахе и четыре алтарные панели в мюнхенской пинакотеке. Вольгемут
+                писал также портреты.
+              </p>
+            </div>
+          </div>
+          <div class="artists__right">
+            <div class="accordion__container" id="accordion3">
+              <h3 class="accordion__title">C 1400 по 1499 гг.</h3>
+              <div class="accordion__content">
+                <ul class="accordion__list">
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="burgkmair">Ханс Бургкмайр</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="witz">Конрад Виц</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="wolgemut">Михаэль Вольгемут</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Ганс Гольбейн
+                      (Старший)</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Альбрехт
+                      Дюрер</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Вольфганг
+                      Катцхаймер</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Конрад фон
+                      Зост</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Штефан
+                      Лохнер</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер
+                      Бертрам</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер жития
+                      Марии</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер святой
+                      Вероники</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер
+                      Франке</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мастер E.
+                      S.</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Исраэль ван
+                      Мекенен</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Ганс
+                      Мемлинг</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Лукас Мозер</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Ганс
+                      Мульчер</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Бернт Нотке</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Вильгельм
+                      Плейденвурф</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Ганс
+                      Плейденвурф</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Ян Полак</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Герман Роде</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мартин
+                      Шаффнер</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Мартин
+                      Шонгауэр</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset">Ханс Штригель
+                      Младший</button></li>
+                </ul>
+              </div>
+              <h3 class="accordion__title">C 1500 по 1599 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1600 по 1699 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1700 по 1799 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1800 по 1899 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1900 по 1999 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 2000г.</h3>
+              <div>First content panel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container catalog-tab__content" data-target="russian">
+        <p class="catalog__text">
+          Россия славится своими художниками. Они внесли огромный вклад в мировое искусство, а их картины бьют рекорды
+          на мировых аукционах. Вспомним лучших из лучших.
+        </p>
+        <div class="artists">
+          <div class="artists__left">
+            <div class="artists__content artists__content--active" data-target="amvrosij">
+              <img src="img/catalog/no_photo.jpg" alt="Амвросий" class="artists__photo">
+              <h3 class="artists__name">Амвросий</h3>
+              <span class="artists__lifetime">умер ок. 1494 года</span>
+              <p class="artists__descr">
+                Русский художник, мастер ювелирного искусства и резьбы по дереву, жил и работал в XV веке. Одним из
+                первых стал оставлять на своих работах подпись, что помогло в последующем идентифицировать его работы.
+                Амвросий был монахом и предполагается, что он происходит из дворянского рода Кучецких. Большую часть
+                своей жизни он провёл в Троице-Сергиевом монастыре, где и умер около 1494 года в должности казначея.
+              </p>
+            </div>
+            <div class="artists__content" data-target="dionisij">
+              <img src="img/catalog/ru_dionisij.jpg" alt="" class="artists__photo">
+              <h3 class="artists__name">Дионисий</h3>
+              <span class="artists__lifetime">около 1440—1503/08</span>
+              <p class="artists__descr">
+                Ведущий московский иконописец и мастер фресок конца XV — начала XVI веков. Считается продолжателем
+                традиций Андрея Рублёва. Дионисий — первый известный по документам русский иконописец светского сословия
+              </p>
+            </div>
+            <div class="artists__content" data-target="prohor">
+              <img src="img/catalog/no_photo.jpg" alt="" class="artists__photo">
+              <h3 class="artists__name">Прохор с Городца</h3>
+              <span class="artists__lifetime">упомин. в 1405</span>
+              <p class="artists__descr">
+                Иконописец начала XV века. Предполагаемый учитель Андрея Рублёва.
+                Сведения о жизни иконописца крайне скудны. Согласно Троицкой летописи, в 1405 году он вместе с Феофаном
+                Греком и Андреем Рублёвым расписывал Благовещенский собор Московского Кремля. На основании того, что
+                летописец называет Прохора «старцем» и упоминает его перед Рублёвым, В. Н. Лазарев сделал вывод:
+                Прохор был старше по возрасту и обладал большей известностью. Кроме того, исследователь
+                предположил, что старец мог быть не только коллегой, но и учителем Рублёва.
+              </p>
+            </div>
+            <div class="artists__content" data-target="rublev">
+              <img src="img/catalog/ru_rublev.jpg" alt="Андрей Рублёв" class="artists__photo">
+              <h3 class="artists__name">Андрей Рублёв</h3>
+              <span class="artists__lifetime">около 1360 —17 октября 1428 или 29 января 1430</span>
+              <p class="artists__descr">
+                Иконописец московской школы иконописи, книжной и монументальной живописи XV века. Канонизирован
+                Русской православной церковью в лике преподобных.
+                Творчество Рублёва сложилось на почве художественных традиций Московского княжества; он был хорошо
+                знаком также со славянским художественным опытом. Первое упоминание об Андрее в летописи появилось
+                только в 1405 году, свидетельствующее о том, что Феофаном Греком, Прохором-старцем и чернецом (монахом)
+                Андреем Рублёвым был расписан Благовещенский собор в Московском кремле. В перечне имён в летописи он
+                назван последним, то есть он был младшим. Второй раз в летописи Андрей упоминается в 1408 году,
+                когда он делал росписи с Даниилом Чёрным в Успенском соборе во Владимире. Прошло всего три года, а у
+                Андрея уже появились помощники и ученики, к тому времени у Андрея уже полностью сформировался свой
+                индивидуальный стиль. В 1420-х годах Андрей упоминается в третий раз: с Даниилом Чёрным он руководил
+                работами в Троицком соборе Троице-Сергиева монастыря. Эти росписи не сохранились. В 1411 или 1425—1427
+                годах он создал свой шедевр — «Троицу».
+              </p>
+            </div>
+          </div>
+          <div class="artists__right">
+            <div class="accordion__container" id="accordion4">
+              <h3 class="accordion__title">C 1400 по 1499 гг.</h3>
+              <div class="accordion__content">
+                <ul class="accordion__list">
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="amvrosij">Амвросий</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="dionisij">Дионисий</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="prohor">Прохор с Городца</button></li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="rublev">Андрей Рублёв</button></li>
+                </ul>
+              </div>
+              <h3 class="accordion__title">C 1500 по 1599 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1600 по 1699 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1700 по 1799 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1800 по 1899 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1900 по 1999 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 2000г.</h3>
+              <div>First content panel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container catalog-tab__content" data-target="belgian">
+        <p class="catalog__text">
+          В бельгийской живописи более заметны национальные самобытные черты, чем в архитектуре и в ваянии. На
+          первом этапе наиболее распространена гравюрная живопись, в которой используется значительное разнообразие
+          сюжетов: религиозных, мифологических, бытовых. Доминирующим центром развития живописи становится Антверпен.
+        </p>
+        <div class="artists">
+          <div class="artists__left">
+            <div class="artists__content artists__content--active" data-target="hvaneyck">
+              <img src="img/catalog/bel_hvaneyck.webp" alt="Хуберт Ван Эйк" class="artists__photo">
+              <h3 class="artists__name">Хуберт ван Эйк</h3>
+              <span class="artists__lifetime"> 1370 год — 18 сентября 1426 года</span>
+              <p class="artists__descr">
+                Южно-нидерландский (фламандский) живописец эпохи Северного Возрождения. Старший брат Яна ван Эйка,
+                которого он обучал живописи. С начала 1420-х годов жил в Генте.
+                Исходя из надписи на раме Гентского алтаря в соборе Св. Бавона (полиптих «Поклонение агнцу» в Генте),
+                считается, что Хуберт ван Эйк участвовал в создании этого произведения. Однако, в настоящее время это
+                свидетельство подвергается сомнению: есть мнение, что надпись сделана позднее, а вся живопись алтаря
+                исполнена его братом.
+              </p>
+            </div>
+            <div class="artists__content" data-target="ivaneyck">
+              <img src="img/catalog/bel_ivaneyck.jpg" alt="Ян ван Эйк" class="artists__photo">
+              <h3 class="artists__name">Ян ван Эйк</h3>
+              <span class="artists__lifetime">ок. 1385 или 1390 — 1441</span>
+              <p class="artists__descr">
+                Ранненидерландский художник-новатор Северного Возрождения, дипломат, мастер портрета, автор более ста
+                картин на религиозные сюжеты. Младший брат художника и своего учителя Губерта ван Эйка.
+                Ван Эйка считают изобретателем масляных красок, хотя на самом деле он лишь усовершенствовал их.
+                Благодаря ван Эйку масляная техника получила всеобщее признание. Она стала традиционной для Нидерландов,
+                в XV веке пришла в Германию и во Францию, оттуда — в Италию </p>
+            </div>
+          </div>
+          <div class="artists__right">
+            <div class="accordion__container" id="accordion5">
+              <h3 class="accordion__title">C 1400 по 1499 гг.</h3>
+              <div class="accordion__content">
+                <ul class="accordion__list">
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="hvaneyck">Хуберт ван Эйк</button>
+                  </li>
+                  <li class="artists__item"><button class="artists__btn artists-tab__btn btn-reset"
+                      data-path="ivaneyck">Ян ван Эйк</button></li>
+                </ul>
+              </div>
+              <h3 class="accordion__title">C 1500 по 1599 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1600 по 1699 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1700 по 1799 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 1800 по 1899 гг.</h3>
+              <div>First content panel</div>
+              <h3 class="accordion__title">C 1900 по 1999 гг.</h3>
+              <div>Second content panel</div>
+              <h3 class="accordion__title">C 2000г.</h3>
+              <div>First content panel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="container events__container">
+        <h2 class="title events__title">События</h2>
+        <ul class="events__list">
+          <li class="events__item">
+            <img src="img/event1.jpg" alt="Картина" class="events__img">
+            <span class="events__place">Музей им. Щусева</span>
+            <span class="events__date">с 20 марта по 30 апреля</span>
+            <div class="events__card-bottom">
+              <h3 class="events__subtitle">Книжная гравюра в живом восприятии</h3>
+              <p class="events__descr">
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+              </p>
+            </div>
+            <a href="#" class="events__more-link">Подробнее</a>
+          </li>
+          <li class="events__item">
+            <img src="img/event2.jpg" alt="Картина" class="events__img">
+            <span class="events__place">ММОМА</span>
+            <span class="events__date">24 марта 19:00</span>
+            <div class="events__card-bottom">
+              <h3 class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и&nbsp;Сергей Ильин.</h3>
+              <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким
+                доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет
+                собой интересный эксперимент проверки новых принципов формирования...</p>
+            </div>
+            <a href="#" class="events__more-link">Подробнее</a>
+          </li>
+          <li class="events__item">
+            <img src="img/event3.jpg" alt="Еврейский музей" class="events__img">
+            <span class="events__place"> Еврейский музей</span>
+            <span class="events__date">с 31 марта по 21 апреля</span>
+            <div class="events__card-bottom">
+              <h3 class="events__subtitle">Выставка «Формация 2020»</h3>
+              <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки
+                играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование
+                играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.
+              </p>
+            </div>
+            <a href="#" class="events__more-link">Подробнее</a>
+          </li>
+          <li class="events__item events__item--hide">
+            <img src="img/event4.jpg" alt="Выставка в третьяковке" class="events__img">
+            <span class="events__place">Третьяковка на Крымском валу</span>
+            <span class="events__date">с 30 марта по 30 апреля</span>
+            <div class="events__card-bottom">
+              <h3 class="events__subtitle">XXIV Международная биеннале молодого искусства</h3>
+              <p class="events__descr">Внезапно, реплицированные с зарубежных источников, современные исследования
+                представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть
+                рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+              <a href="#" class="events__more-link">Подробнее</a>
+            </div>
+          </li>
+          <li class="events__item events__item--hide">
+            <img src="img/event5.jpg" alt="Джон Винзор" class="events__img">
+            <span class="events__place">ММАМ</span>
+            <span class="events__date">с 8 апреля по 20 мая</span>
+            <div class="events__card-bottom">
+              <h3 class="events__subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+              <p class="events__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
+                Микеланджело.</p>
+              <a href="#" class="events__more-link">Подробнее</a>
+            </div>
+          </li>
+          <li class="events__item events__item--hide">
+            <img src="img/event6.jpg" alt="" class="events__img">
+            <span class="events__place">JART</span>
+            <span class="events__date">с 21 апреля по 2 мая</span>
+            <div class="events__card-bottom">
+              <h3 class="events__subtitle">Выставка «Невинные шалости</h3>
+              <p class="events__descr">
+                В московской галерее JART открылась выставка молодого художника Владимира Карташова «Невинные шалости.
+                #Технорококо. Праздник — стиль — манифест». Куратором этого проекта на стыке искусства и театра выступил
+                Сергей Хачатуров
+              </p>
+              <a href="#" class="events__more-link">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+        <button class="events__btn btn">Все события</button>
+      </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+  </main>
+</body>
+
+</html>
