@@ -1070,6 +1070,24 @@ img {
   .search__input--mobile {
     width: 84%;
   }
+  .gallery {
+    max-height: 1170px;
+    padding-bottom: 178px;
+  }
+  .gallery__container {
+    flex-direction: column;
+  }
+  .gallery__left {
+    width: 42%;
+  }
+  .gallery__note {
+    top: 946px;
+    max-width: 642px;
+  }
+  .gallery__right {
+    margin-top: 103px;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 660px) {
