@@ -1085,7 +1085,7 @@ img {
     width: 84%;
   }
   .gallery {
-    max-height: 1170px;
+    max-height: 1168px;
     padding-bottom: 178px;
   }
   .gallery__container {
@@ -1096,11 +1096,36 @@ img {
   }
   .gallery__note {
     top: 946px;
-    max-width: 642px;
+    width: auto;
   }
   .gallery__right {
     margin-top: 103px;
     max-width: 100%;
+  }
+  .swiper-slide__img {
+    max-height: 280px;
+  }
+  .catalog {
+    padding: 75px 0;
+  }
+  .catalog__top {
+    margin-bottom: 11px;
+  }
+  .catalog__text {
+    margin-bottom: 20px;
+  }
+  .artists {
+    flex-direction: column;
+  }
+  .artists__left {
+    width: 100%;
+    order: 1;
+  }
+  .artists__right {
+    width: 100%;
+  }
+  .accordion__list {
+    columns: 3 auto;
   }
 }
 
