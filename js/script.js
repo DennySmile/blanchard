@@ -129,7 +129,8 @@ window.addEventListener('DOMContentLoaded', function () {
 	document.querySelector('.events__btn').addEventListener('click', function () {
 		document.querySelectorAll('.events__item--hide').forEach(function (removeHide) {
 			removeHide.classList.remove('events__item--hide')
-		})
+		});
+		document.querySelector('.events__item--mobile').classList.remove('events__item--mobile')
 	});
 });
 
