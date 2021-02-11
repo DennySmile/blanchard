@@ -620,7 +620,7 @@ img {
 
 .swiper-pagination {
   position: static;
-  width: 47px;
+  width: 51px;
   color: var(--white);
 }
 
@@ -1264,12 +1264,10 @@ img {
    /* max-height: none; */
     max-width: none;
     min-width: 0;
-  }
-  .swiper-wrapper {
-    /* height: 367px; */
+    width: 290px;
   }
   .swiper-slide__img {
-    max-width: 290px;
+    max-width: 350px;
     max-height: 367px;
   }
   .swiper-top {
