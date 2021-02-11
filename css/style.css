@@ -1330,8 +1330,7 @@ img {
   }
   .events__item {
     margin-bottom: 0;
-    min-width: 290px;
-    max-width: 100%;
+    min-width: 100%;
   }
   .events__item--mobile {
     display: list-item;
