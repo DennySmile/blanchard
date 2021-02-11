@@ -757,26 +757,26 @@ img {
 
 .artists__photo {
   width: 100%;
+  margin-bottom: 36px;
   max-height: 500px;
   object-fit: contain;
 }
 
 .artists__name {
-  margin-top: 36px;
   font-weight: 600;
   font-size: 24px;
+  margin-bottom: 12px;
 }
 
 .artists__lifetime {
   display: block;
-  margin-top: 12px;
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 16px;
   color: #999999;
 }
 
 .artists__descr {
-  margin-top: 5px;
   line-height: 32px;
 }
 
@@ -1107,7 +1107,7 @@ img {
     width: 84%;
   }
   .gallery {
-    padding-bottom: 178px;
+    padding-bottom: 70px;
   }
   .gallery__container {
     flex-direction: column;
@@ -1116,11 +1116,12 @@ img {
     width: 42%;
   }
   .gallery__note {
-    top: 946px;
+    position: static;
     width: auto;
   }
   .gallery__right {
     margin-top: 108px;
+    margin-bottom: 29px;
     max-width: 100%;
   }
   .swiper-slide__img {
@@ -1254,6 +1255,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    margin-bottom: 20px;
   }
   .swiper-top {
     margin-bottom: 0;
@@ -1261,7 +1263,7 @@ img {
   .swiper-container {
     height: 367px;
     margin-bottom: 20px;
-   /* max-height: none; */
+    /* max-height: none; */
     max-width: none;
     min-width: 0;
     width: 290px;
@@ -1276,8 +1278,17 @@ img {
   .gallery__note {
     top: 709px;
   }
+  .catalog {
+    padding-top: 85px;
+    padding-bottom: 51px;
+  }
   .catalog__top {
     display: block;
+    margin-bottom: 22px;
+  }
+  .catalog__title {
+    margin-right: 0;
+    margin-bottom: 11px;
   }
   .catalog__btn {
     width: 44px;
@@ -1285,10 +1296,30 @@ img {
     background-size: 32px;
   }
   .catalog__btn:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 13px;
+  }
+  .catalog__text {
+    display: none;
+  }
+  .accordion__title {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .accordion__content {
+    padding: 18px 0;
   }
   .accordion__list {
     min-height: 291px;
     columns: 1;
+  }
+  .artists__photo {
+    margin-bottom: 25px;
+  }
+  .artists__name {
+    margin-bottom: 17px;
+  }
+  .events__title {
+    margin-bottom: 16px;
   }
 }
