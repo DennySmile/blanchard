@@ -202,7 +202,7 @@
           <div class="swiper-container">
 
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper gallery__swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide"><img src="img/gallery/g01.jpg" alt="" class="swiper-slide__img"></div>
               <div class="swiper-slide"><img src="img/gallery/g02.jpg" alt="" class="swiper-slide__img"></div>
@@ -817,84 +817,87 @@
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="title events__title">События</h2>
-        <ul class="events__list">
-          <li class="events__item">
-            <img src="img/event1.jpg" alt="Картина" class="events__img">
-            <span class="events__place">Музей им. Щусева</span>
-            <span class="events__date">с 20 марта по 30 апреля</span>
-            <div class="events__card-bottom">
-              <h3 class="events__subtitle">Книжная гравюра в живом восприятии</h3>
+        <ul class="events__swiper-container events__list" data-mobile="false"> 
+          <div class="swiper-wrapper events__swiper-wrapper">
+            <li class="events__item">
+              <img src="img/event1.jpg" alt="Картина" class="events__img">
+              <span class="events__place">Музей им. Щусева</span>
+              <span class="events__date">с 20 марта по 30 апреля</span>
+              <div class="events__card-bottom">
+                <h3 class="events__subtitle">Книжная гравюра в живом восприятии</h3>
+                  <p class="events__descr">
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                    продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                  </p>
+                  <a href="#" class="events__more-link">Подробнее</a>
+                </div>
+                <a href="#" class="events__more-link">Подробнее</a>
+            </li>
+            <li class="events__item">
+              <img src="img/event2.jpg" alt="Картина" class="events__img">
+              <span class="events__place">ММОМА</span>
+              <span class="events__date">24 марта 19:00</span>
+              <div class="events__card-bottom">
+                <h3 class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                  <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким
+                    доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет
+                    собой интересный эксперимент проверки новых принципов формирования...</p>
+                  <a href="#" class="events__more-link">Подробнее</a>
+                </div>
+            </li>
+            <li class="events__item events__item--mobile">
+              <img src="img/event3.jpg" alt="Еврейский музей" class="events__img">
+              <span class="events__place"> Еврейский музей</span>
+              <span class="events__date">с 31 марта по 21 апреля</span>
+              <div class="events__card-bottom">
+                <h3 class="events__subtitle">Выставка «Формация 2020»</h3>
+                  <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки
+                    играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование
+                    играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.
+                  </p>
+                  <a href="#" class="events__more-link">Подробнее</a>
+                </div>
+            </li>
+            <li class="events__item events__item--hide">
+              <img src="img/event4.jpg" alt="Выставка в третьяковке" class="events__img">
+              <span class="events__place">Третьяковка на Крымском валу</span>
+              <span class="events__date">с 30 марта по 30 апреля</span>
+              <div class="events__card-bottom">
+                <h3 class="events__subtitle">XXIV Международная биеннале молодого искусства</h3>
+                <p class="events__descr">Внезапно, реплицированные с зарубежных источников, современные исследования
+                  представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть
+                  рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+                <a href="#" class="events__more-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="events__item events__item--hide">
+              <img src="img/event5.jpg" alt="Джон Винзор" class="events__img">
+              <span class="events__place">ММАМ</span>
+              <span class="events__date">с 8 апреля по 20 мая</span>
+              <div class="events__card-bottom">
+                <h3 class="events__subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <p class="events__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                  династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
+                  Микеланджело.</p>
+                <a href="#" class="events__more-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="events__item events__item--hide">
+              <img src="img/event6.jpg" alt="" class="events__img">
+              <span class="events__place">JART</span>
+              <span class="events__date">с 21 апреля по 2 мая</span>
+              <div class="events__card-bottom">
+                <h3 class="events__subtitle">Выставка «Невинные шалости</h3>
                 <p class="events__descr">
-                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                  В московской галерее JART открылась выставка молодого художника Владимира Карташова «Невинные шалости.
+                  #Технорококо. Праздник — стиль — манифест». Куратором этого проекта на стыке искусства и театра выступил
+                  Сергей Хачатуров
                 </p>
                 <a href="#" class="events__more-link">Подробнее</a>
               </div>
-              <a href="#" class="events__more-link">Подробнее</a>
-          </li>
-          <li class="events__item">
-            <img src="img/event2.jpg" alt="Картина" class="events__img">
-            <span class="events__place">ММОМА</span>
-            <span class="events__date">24 марта 19:00</span>
-            <div class="events__card-bottom">
-              <h3 class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким
-                  доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет
-                  собой интересный эксперимент проверки новых принципов формирования...</p>
-                <a href="#" class="events__more-link">Подробнее</a>
-              </div>
-          </li>
-          <li class="events__item events__item--mobile">
-            <img src="img/event3.jpg" alt="Еврейский музей" class="events__img">
-            <span class="events__place"> Еврейский музей</span>
-            <span class="events__date">с 31 марта по 21 апреля</span>
-            <div class="events__card-bottom">
-              <h3 class="events__subtitle">Выставка «Формация 2020»</h3>
-                <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки
-                  играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование
-                  играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.
-                </p>
-                <a href="#" class="events__more-link">Подробнее</a>
-              </div>
-          </li>
-          <li class="events__item events__item--hide">
-            <img src="img/event4.jpg" alt="Выставка в третьяковке" class="events__img">
-            <span class="events__place">Третьяковка на Крымском валу</span>
-            <span class="events__date">с 30 марта по 30 апреля</span>
-            <div class="events__card-bottom">
-              <h3 class="events__subtitle">XXIV Международная биеннале молодого искусства</h3>
-              <p class="events__descr">Внезапно, реплицированные с зарубежных источников, современные исследования
-                представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть
-                рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
-              <a href="#" class="events__more-link">Подробнее</a>
-            </div>
-          </li>
-          <li class="events__item events__item--hide">
-            <img src="img/event5.jpg" alt="Джон Винзор" class="events__img">
-            <span class="events__place">ММАМ</span>
-            <span class="events__date">с 8 апреля по 20 мая</span>
-            <div class="events__card-bottom">
-              <h3 class="events__subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-              <p class="events__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
-                династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
-                Микеланджело.</p>
-              <a href="#" class="events__more-link">Подробнее</a>
-            </div>
-          </li>
-          <li class="events__item events__item--hide">
-            <img src="img/event6.jpg" alt="" class="events__img">
-            <span class="events__place">JART</span>
-            <span class="events__date">с 21 апреля по 2 мая</span>
-            <div class="events__card-bottom">
-              <h3 class="events__subtitle">Выставка «Невинные шалости</h3>
-              <p class="events__descr">
-                В московской галерее JART открылась выставка молодого художника Владимира Карташова «Невинные шалости.
-                #Технорококо. Праздник — стиль — манифест». Куратором этого проекта на стыке искусства и театра выступил
-                Сергей Хачатуров
-              </p>
-              <a href="#" class="events__more-link">Подробнее</a>
-            </div>
-          </li>
+            </li>
+          </div>
+          <div class="events__swiper-pagination"></div>
         </ul>
         <button class="events__btn btn">Все события</button>
       </div>

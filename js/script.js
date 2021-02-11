@@ -22,11 +22,14 @@ const choices = new Choices(element, {
 	itemSelectText: '',
 });
 
-//Свайпер
+// Swiper Галерея
 
 var mySwiper = new Swiper('.swiper-container', {
 
 	breakpoints: {
+		320: {
+			spaceBetween: 10,
+		},
 		768: {
 			slidesPerView: 2,
 			slidesPerColumn: 2,
@@ -53,7 +56,42 @@ var mySwiper = new Swiper('.swiper-container', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-})
+});
+
+// Swiper События
+
+const slider = document.querySelector('.events__swiper-container');
+
+let eventsSwiper;
+
+function mobileSlider() {
+	if (window.innerWidth <= 600 && slider.dataset.mobile == 'false') {
+		eventsSwiper = new Swiper(slider, {
+			slidesPerView: 1,
+			spaceBetween: 50,
+			slideClass: 'events__item',
+			pagination: {
+				el: '.events__swiper-pagination',
+				clickable: true,
+			},
+		});
+
+		slider.dataset.mobile = 'true';
+	}
+
+	if (window.innerWidth > 600) {
+		slider.dataset.mobile = 'false';
+		if (slider.classList.contains('swiper-container-initialized')) {
+			eventsSwiper.destroy();
+		}
+	}
+}
+
+mobileSlider()
+
+window.addEventListener('resize', () => {
+	mobileSlider();
+});
 
 // Табы
 
@@ -68,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.querySelector(`[data-target="${path}"]`).classList.add('catalog-tab__content--active')
 		})
 	})
-})
+});
 
 document.addEventListener('DOMContentLoaded', function () {
 	document.querySelectorAll('.artists-tab__btn').forEach(function (tabsBtn) {
@@ -81,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.querySelector(`[data-target="${path}"]`).classList.add('artists__content--active')
 		})
 	})
-})
+});
 
 // Аккордеон
 
