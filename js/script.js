@@ -198,9 +198,15 @@ window.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function(){
   
 	$(".search__btn").click(function(){
-	  $(".search, .search__input").toggleClass("search-mobile");
+	  $(".search").toggleClass("search-mobile");
 	  $(".search__input").toggleClass("search__input--mobile");
-	  $("input[type='text']").focus();
+	  $(".search__close-btn").toggleClass("search__close-btn--mobile");
+	  $("input[type='search']").focus();
 	});
-	
+
+	$(".search__close-btn").click(function(){
+		$(".search").toggleClass("search-mobile");
+		$(".search__input").toggleClass("search__input--mobile");
+		$(".search__close-btn").toggleClass("search__close-btn--mobile");  
+	});
   });

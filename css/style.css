@@ -417,6 +417,15 @@ img {
   font-size: 18px;
 }
 
+.search__close-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 29px;
+  width: 29px;
+  background-image: url('../img/search-close.svg');
+}
+
 .hero {
   position: relative;
   margin-bottom: 90px;
@@ -1097,19 +1106,20 @@ img {
 
 @media (max-width: 768px) {
   .search-mobile {
-    height: 100%;
-    width: 94%;
-    right: 0;
+    width: 87%;
+    right: 50px;
     z-index: 13;
     background-color: var(--black);
     transition: width .3s ease;
   }
   .search__input {
-    top: 69px;
     right: 52px;
   }
   .search__input--mobile {
     max-width: 576px;
+  }
+  .search__close-btn--mobile {
+    display: inline-block;
   }
   .gallery {
     padding-bottom: 70px;
