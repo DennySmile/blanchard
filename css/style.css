@@ -79,6 +79,10 @@ img {
   font-size: 48px;
 }
 
+.hover:hover {
+  color: #C283F3;
+}
+
 .container {
   padding: 0 50px;
   margin: 0 auto;
@@ -439,7 +443,7 @@ img {
   background-image: url(../img/hero1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  animation: 30s scale infinite linear;
+  animation: 20s scale infinite linear;
 }
 
 @keyframes scale {
@@ -447,7 +451,7 @@ img {
     transform: scale(0, 0.0, 0);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(0, 0.0, 0);
