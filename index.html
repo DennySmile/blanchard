@@ -909,9 +909,155 @@
         <div class="editions__left">
           <h2 class="title editions__title">Издания</h2>
           <h3 class="editions__subtitle">Категории</h3>
+          <ul class="editions__list">
+            <li class="editions__item"><label class="editions__label">
+                <input type="checkbox" name="bestsellers" class="visually-hidden">
+                <span>Бестселлеры</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="art" class="visually-hidden">
+                <span>Искусство</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="architecture" class="visually-hidden">
+                <span>Архитектура</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="design" class="visually-hidden">
+                <span>Дизайн</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="fashion" class="visually-hidden">
+                <span>Мода</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="forkids" class="visually-hidden">
+                <span>Детям</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="fiction" class="visually-hidden">
+                <span>Художественная литература</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="publicism" class="visually-hidden">
+                <span>Публицистика</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="guides" class="visually-hidden">
+                <span>Путеводители</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="philosophy" class="visually-hidden">
+                <span>Философия</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="educationalliterature" class="visually-hidden">
+                <span>Учебная литература</span>
+              </label></li>
+            <li class="editions__item"><label class="editions__label editions__label">
+                <input type="checkbox" name="magazines" class="visually-hidden">
+                <span>Журналы и газеты</span>
+              </label></li>
+          </ul>
+          <div class="editions__price">
+            <h3 class="editions__subtitle">Цена</h3>
+            <form method="post" class="price">
+              <span class="price__text">От</span>
+              <input type="number" name="priceMin" id="priceMin" class="price__input" placeholder="50">
+              <span class="price__text">до</span>
+              <input type="number" name="priceMax" id="priceMax" class="price__input" placeholder="25 000">
+              <span class="price__text">руб.</span>
+            </form>
+          </div>
         </div>
-        <div class="editions__right"></div>
-      </div>
+        <div class="editions__right">
+          <div class="editions__swiper-top swiper-top">
+            <div class="editions__swiper-button-prev"></div>
+            <div class="editions__swiper-pagination"></div>
+            <div class="editions__swiper-button-next"></div>
+          </div>
+          <ul class="editions__swiper-container">
+            <div class="editions__swiper-wrapper">
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_1.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Искусство цвета</h4>
+                    <span class="slide__author">Иттен, Иоханнес</span>
+                  </div>
+                  <div class="slide__price">620 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_2.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Типографика</h4>
+                    <span class="slide__author">Рудер, Эмиль</span>
+                  </div>
+                  <div class="slide__price">2450 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_3.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Книга про буквы</h4>
+                    <span class="slide__author">Гордон, Юрий</span>
+                  </div>
+                  <div class="slide__price">2200 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_4.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Николай Ильин</h4>
+                    <span class="slide__author">Кричевский, Владимир</span>
+                  </div>
+                  <div class="slide__price">1100 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_5.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Модульные сетки в граф...</h4>
+                    <span class="slide__author">Мюллер-Брокманн, Йозеф</span>
+                  </div>
+                  <div class="slide__price">1450 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_6.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Эволюция графических ст...</h4>
+                    <span class="slide__author">Хеллер, Чваст</span>
+                  </div>
+                  <div class="slide__price">3200 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+              <li class="editions__swiper-slide"> 
+                <img src="img/editions_7.jpg" alt="Обложка" class="slide__img">
+                <div class="slide__descr">
+                  <div class="slide__text">
+                    <h4 class="slide__title">Искусство и визуальное в...</h4>
+                    <span class="slide__author">Арнхейм, Рудольф</span>
+                  </div>
+                  <div class="slide__price">2200 руб</div>
+                </div>
+                <button class="slide__btn btn">Заказать</button>
+              </li>
+            </div>
+          </ul>
+        </div>
     </section>
   </main>
   <script src="js/jquery.min.js"></script>

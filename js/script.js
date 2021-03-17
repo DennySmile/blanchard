@@ -93,6 +93,41 @@ window.addEventListener('resize', () => {
 	mobileSlider();
 });
 
+// Swiper Издания
+
+if (document.documentElement.clientWidth > 767) {
+
+	var editionsSwiper = new Swiper('.editions__swiper-container', {
+		slideClass: 'editions__swiper-slide',
+		wrapperClass: 'editions__swiper-wrapper',
+		spaceBetween: 50,
+		breakpoints: {
+			320: {
+				destroy: true,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 35,
+			},
+			1280: {
+				slidesPerView: 3,
+			}
+		},
+
+
+		pagination: {
+			el: '.editions__swiper-pagination',
+			type: 'fraction',
+		},
+
+		navigation: {
+			nextEl: '.editions__swiper-button-next',
+			prevEl: '.editions__swiper-button-prev',
+		},
+	});
+
+};
+
 // Табы
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -195,18 +230,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Поиск
 
-$(document).ready(function(){
-  
-	$(".search__btn").click(function(){
-	  $(".search").toggleClass("search-mobile");
-	  $(".search__input").toggleClass("search__input--mobile");
-	  $(".search__close-btn").toggleClass("search__close-btn--mobile");
-	  $("input[type='search']").focus();
-	});
+$(document).ready(function () {
 
-	$(".search__close-btn").click(function(){
+	$(".search__btn").click(function () {
 		$(".search").toggleClass("search-mobile");
 		$(".search__input").toggleClass("search__input--mobile");
-		$(".search__close-btn").toggleClass("search__close-btn--mobile");  
+		$(".search__close-btn").toggleClass("search__close-btn--mobile");
+		$("input[type='search']").focus();
 	});
-  });
+
+	$(".search__close-btn").click(function () {
+		$(".search").toggleClass("search-mobile");
+		$(".search__input").toggleClass("search__input--mobile");
+		$(".search__close-btn").toggleClass("search__close-btn--mobile");
+	});
+});
