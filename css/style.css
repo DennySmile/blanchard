@@ -954,20 +954,28 @@ img {
 }
 
 .editions__subtitle {
-  margin-bottom: 8px;
+  padding: 0;
+  margin-bottom: 13px;
   color: var(--white);
   font-weight: bold;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 1px;
 }
 
 .editions__list {
-  margin-bottom: 35px;
+  margin-bottom: 44px;
+}
+
+.editions__item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .editions__label {
+  display: inline-block;
   position: relative;
   padding-left: 25px;
   color: var(--white);
-  line-height: 32px;
   cursor: pointer;
 }
 
@@ -1662,6 +1670,10 @@ img {
   }
   .editions__left {
     margin-bottom: 30px;
+  }
+  .editions__list {
+    display: none;
+    column-count: 1;
   }
   .editions__swiper-container {
     padding: 0;

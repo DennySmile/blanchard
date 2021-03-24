@@ -14,7 +14,7 @@ for (let anchor of anchors) {
 	})
 }
 
-//Настройки скролла
+// Кастомный селект
 const element = document.querySelector('#customSelect');
 const choices = new Choices(element, {
 	searchEnabled: false,
@@ -245,3 +245,6 @@ $(document).ready(function () {
 		$(".search__close-btn").toggleClass("search__close-btn--mobile");
 	});
 });
+
+// Спойлер категории
+
